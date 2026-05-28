@@ -56,7 +56,7 @@ export default function Scene({
     <Canvas
       className="canvas"
       camera={{ position: [0, 0.5, 5], fov: 50 }}
-      dpr={quality === "low" ? 1 : [1, 2]}
+      dpr={quality === "low" ? 1 : [1, 1.5]}
     >
       <Suspense fallback={null}>
         <color attach="background" args={["#03040a"]} />

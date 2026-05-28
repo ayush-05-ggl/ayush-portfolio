@@ -150,6 +150,161 @@ const Overlay = React.forwardRef(function Overlay(
                     </div>
                 </div>
                 </section>
+            <section id="experience" className="panel">
+                  <h2>Professional Experience</h2>
+
+                  <div className="expGrid">
+
+                    <div className="expCard">
+                      <div className="expTop">
+                        <div>
+                          <div className="expRole">Software Engineer</div>
+                          <div className="expCompany">The New York Stem Cell Foundation</div>
+                        </div>
+
+                        <div className="expDate">2025</div>
+                      </div>
+
+                      <div className="expBody">
+                        Worked with the R&D team to prototype a smart incubator system for preserving
+                        human cells under controlled environmental conditions.
+                      </div>
+
+                      <ul className="expList">
+                        <li>Developed PID-based gas regulation system for O₂, CO₂, N₂, and pressure control</li>
+                        <li>Built React touchscreen GUI on Raspberry Pi for monitoring & configuration</li>
+                        <li>Integrated embedded control logic with real-time environmental workflows</li>
+                      </ul>
+                    </div>
+
+                    <div className="expCard">
+                      <div className="expTop">
+                        <div>
+                          <div className="expRole">Full Stack Developer Intern</div>
+                          <div className="expCompany">Dream Team Technologies</div>
+                        </div>
+
+                        <div className="expDate">2022 — 2023</div>
+                      </div>
+
+                      <div className="expBody">
+                        Collaborated with developers and designers to build a university management platform.
+                      </div>
+
+                      <ul className="expList">
+                        <li>Developed responsive interfaces using React, Angular & Vue.js</li>
+                        <li>Implemented OAuth authentication and secure payment handling</li>
+                        <li>Automated testing using Selenium + PyTest reducing manual QA effort by 75%</li>
+                      </ul>
+                    </div>
+
+                    <div className="expCard">
+                      <div className="expTop">
+                        <div>
+                          <div className="expRole">Hardware Engineering Intern</div>
+                          <div className="expCompany">Defense Research & Development Organization (DRDO)</div>
+                        </div>
+
+                        <div className="expDate">2021 — 2022</div>
+                      </div>
+
+                      <div className="expBody">
+                        Validated VHDL-designed circuits and simulation workflows for digital hardware systems.
+                      </div>
+
+                      <ul className="expList">
+                        <li>Worked with ModelSim for architecture & configuration verification</li>
+                        <li>Performed validation/testing for digital hardware logic workflows</li>
+                        <li>Contributed to improving verification reliability across project teams</li>
+                      </ul>
+                    </div>
+
+                  </div>
+            </section>
+
+            <section id="skills" className="panel">
+                  <h2>Technical Skills</h2>
+
+                  <div className="skillsGrid">
+
+                    <div className="skillCard">
+                      <h3>Languages</h3>
+                      <div className="pillRow">
+                        <span className="pill">C</span>
+                        <span className="pill">C++</span>
+                        <span className="pill">Python</span>
+                        <span className="pill">JavaScript</span>
+                        <span className="pill">Java</span>
+                        <span className="pill">C#</span>
+                        <span className="pill">R</span>
+                      </div>
+                    </div>
+
+                    <div className="skillCard">
+                      <h3>Frontend</h3>
+                      <div className="pillRow">
+                        <span className="pill">React</span>
+                        <span className="pill">Three.js</span>
+                        <span className="pill">Vue.js</span>
+                        <span className="pill">Angular</span>
+                        <span className="pill">HTML5</span>
+                        <span className="pill">CSS3</span>
+                      </div>
+                    </div>
+
+                    <div className="skillCard">
+                      <h3>Backend & APIs</h3>
+                      <div className="pillRow">
+                        <span className="pill">Node.js</span>
+                        <span className="pill">Express.js</span>
+                        <span className="pill">REST APIs</span>
+                        <span className="pill">.NET</span>
+                        <span className="pill">Flask</span>
+                      </div>
+                    </div>
+
+                    <div className="skillCard">
+                      <h3>Databases & Cloud</h3>
+                      <div className="pillRow">
+                        <span className="pill">MongoDB</span>
+                        <span className="pill">PostgreSQL</span>
+                        <span className="pill">MySQL</span>
+                        <span className="pill">AWS</span>
+                        <span className="pill">EC2</span>
+                        <span className="pill">S3</span>
+                        <span className="pill">Azure</span>
+                      </div>
+                    </div>
+
+                    <div className="skillCard">
+                      <h3>Testing & Tools</h3>
+                      <div className="pillRow">
+                        <span className="pill">Selenium</span>
+                        <span className="pill">PyTest</span>
+                        <span className="pill">Jira</span>
+                        <span className="pill">QTest</span>
+                        <span className="pill">Tableau</span>
+                        <span className="pill">Postman</span>
+                        <span className="pill">Docker</span>
+                        <span className="pill">R Studio</span>
+                      </div>
+                    </div>
+
+                    <div className="skillCard">
+                      <h3>Concepts</h3>
+                      <div className="pillRow">
+                        <span className="pill">Agile</span>
+                        <span className="pill">Scrum</span>
+                        <span className="pill">SDLC</span>
+                        <span className="pill">Cloud Computing</span>
+                        <span className="pill">DBMS</span>
+                        <span className="pill">Software Testing</span>
+                        <span className="pill">Internet Computing</span>
+                      </div>
+                    </div>
+
+                  </div>
+             </section>
 
 
         <section id="projects" className="panel">
@@ -266,7 +421,7 @@ const Overlay = React.forwardRef(function Overlay(
           <h2>Contact</h2>
 
   <div className="contactRow">
-    <a className="btn primary" href="/Ayush Gehlot_SDE.pdf" target="_blank" rel="noreferrer">
+    <a className="btn primary" href="/AyushGehlot_SE-.pdf" target="_blank" rel="noreferrer">
       Download Resume
     </a>
     <a className="btn" href="mailto:ayushgehlot100@gmail.com">

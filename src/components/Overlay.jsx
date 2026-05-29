@@ -700,7 +700,7 @@ const Overlay = React.forwardRef(function Overlay(
           <h2>Contact</h2>
 
   <div className="contactRow">
-    <a className="btn primary" href="/AyushGehlot_SE-.pdf" target="_blank" rel="noreferrer">
+    <a className="btn primary" href="public/AyushGehlot_SE-.pdf" target="_blank" rel="noreferrer">
       Download Resume
     </a>
     <a className="btn" href="mailto:ayushgehlot100@gmail.com">

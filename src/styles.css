@@ -418,10 +418,36 @@ a { color: inherit; text-decoration: none; }
 }
 
 .expCard{
-  background: rgba(18,22,38,0.88);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20,24,40,0.94),
+      rgba(12,15,26,0.92)
+    );
+
   border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 18px;
-  padding: 18px;
+
+  border-radius: 22px;
+
+  padding: 22px;
+
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.35);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.expCard:hover{
+  transform: translateY(-4px);
+
+  border-color: rgba(120,170,255,0.4);
+
+  box-shadow:
+    0 18px 50px rgba(0,0,0,0.45),
+    0 0 25px rgba(100,140,255,0.12);
 }
 
 .expTop{
@@ -759,4 +785,158 @@ a { color: inherit; text-decoration: none; }
     opacity: 0.75;
   }
 }
+/* ===== CURRENTLY SECTION ===== */
 
+.currentlyCard{
+  margin: 18px 0 26px;
+
+  padding: 18px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24,30,52,0.92),
+      rgba(14,18,32,0.92)
+    );
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.28);
+}
+
+.currentlyLabel{
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+
+  color: rgba(150,180,255,0.9);
+
+  margin-bottom: 14px;
+}
+
+.currentlyItems{
+  display: grid;
+  gap: 10px;
+
+  color: rgba(255,255,255,0.9);
+
+  line-height: 1.6;
+}
+/* ===== COMMUNITY / NGO SECTION ===== */
+
+.communityGrid{
+  display: grid;
+  gap: 18px;
+}
+
+.communityCard{
+  background:
+    linear-gradient(
+      145deg,
+      rgba(22,28,46,0.94),
+      rgba(14,18,30,0.92)
+    );
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  border-radius: 22px;
+
+  padding: 22px;
+
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.32);
+}
+
+.communityTop{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  margin-bottom: 12px;
+}
+
+.communityRole{
+  font-size: 1.08rem;
+  font-weight: 700;
+
+  color: white;
+}
+
+.communityOrg{
+  margin-top: 4px;
+
+  color: rgba(160,190,255,0.88);
+}
+
+.communityDate{
+  font-size: 0.92rem;
+
+  opacity: 0.72;
+}
+
+.communityBody{
+  color: rgba(255,255,255,0.88);
+
+  line-height: 1.7;
+
+  margin-bottom: 14px;
+}
+
+.communityList{
+  padding-left: 18px;
+
+  color: rgba(255,255,255,0.82);
+
+  line-height: 1.75;
+
+  display: grid;
+
+  gap: 10px;
+}
+
+.communityTags{
+  margin-top: 18px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.featuredCommunity{
+  position: relative;
+
+  overflow: hidden;
+}
+
+.featuredCommunity::before{
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(120,170,255,0.9),
+      rgba(180,120,255,0.8)
+    );
+}
+
+@media (max-width: 900px){
+  .communityTop{
+    flex-direction: column;
+  }
+}

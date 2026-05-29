@@ -78,148 +78,224 @@ const Overlay = React.forwardRef(function Overlay(
             <a className="btn" href="#contact">Let’s Talk</a>
           </div>
         </section>
+          <section id="about" className="panel">
+            <h2>About Me</h2>
 
-        <section id="about" className="panel">
-                <h2>About</h2>
+            <p className="aboutLead">
+              I’m Ayush Gehlot, a Software Engineer and recent Master’s graduate in
+              Computer Science from Pace University, New York, with concentration in
+              Software Development. My work focuses on building scalable full-stack systems,
+              immersive user interfaces, AI-assisted applications, and embedded software solutions.
+            </p>
 
-                <p className="aboutLead">
-                    I’m Ayush Gehlot — a Software Development-focused MS CS student at Pace University (May 2026),
-                    building end-to-end products that combine clean UI, solid backend engineering, and systems thinking.
-                </p>
+            <div className="currentlyCard">
+              <div className="currentlyLabel">Currently Focused On</div>
 
-                <div className="aboutGrid">
-                    <div className="aboutCard">
-                    <h3>What I’m best at</h3>
-                    <ul className="aboutList">
-                        <li><span className="dot2" /> Full-stack engineering: React + Node/Express + PostgreSQL/MongoDB</li>
-                        <li><span className="dot2" /> Product-grade UI: touch-first layouts, component design, performance tuning</li>
-                        <li><span className="dot2" /> Systems + integration: sensors/I2C + control logic + dashboards (Raspberry Pi)</li>
-                    </ul>
-                    </div>
+              <div className="currentlyItems">
+                <div>🚀 Full-stack engineering with React, Node.js, and cloud technologies</div>
+                <div>🧠 AI-assisted systems, image authenticity research, and intelligent interfaces</div>
+                <div>⚙️ Embedded systems, real-time monitoring dashboards, and Raspberry Pi applications</div>
+              </div>
+            </div>
 
-                    <div className="aboutCard">
-                    <h3>Recent work</h3>
-                    <ul className="aboutList">
-                        <li><span className="dot2" /> NYSCF: smart incubator / Tri-Gas controller (O₂/CO₂/N₂) + React touchscreen UI</li>
-                        <li><span className="dot2" /> Smart City Dashboard ELL: React UI + MongoDB Atlas analytics & visualizations</li>
-                        <li><span className="dot2" /> CaterPal hackathon: 1st place — AI restaurant chatbot (Flask + MongoDB + OpenAI)</li>
-                    </ul>
-                    </div>
+            <div className="aboutGrid">
 
-                    <div className="aboutCard aboutFull">
-                    <h3>Tech stack</h3>
-                    <div className="pillRow">
-                        <span className="pill">React</span>
-                        <span className="pill">Three.js</span>
-                        <span className="pill">Node.js</span>
-                        <span className="pill">Express</span>
-                        <span className="pill">PostgreSQL</span>
-                        <span className="pill">MongoDB Atlas</span>
-                        <span className="pill">AWS</span>
-                        <span className="pill">Python</span>
-                        <span className="pill">Flask</span>
-                        <span className="pill">C / C++</span>
-                        <span className="pill">Raspberry Pi</span>
-                        <span className="pill">REST APIs</span>
-                    </div>
-                    <div className="aboutCard">
-                      <h3>Engineering foundations</h3>
-                      <ul className="aboutList">
-                        <li><span className="dot2" /> Data Structures & Algorithms (complexity analysis, trees, graphs)</li>
-                        <li><span className="dot2" /> Database Management Systems (SQL, indexing, normalization)</li>
-                        <li><span className="dot2" /> Internet Computing & RESTful API design</li>
-                        <li><span className="dot2" /> Mobile Application & Web Content Development</li>
-                        <li><span className="dot2" /> Computational Statistics & data analysis concepts</li>
-                        <li><span className="dot2" /> Cloud Computing fundamentals (AWS, deployment workflows)</li>
-                      </ul>
-                    </div>
-                    <div className="aboutCard">
-                      <h3>Quality, process & analytics</h3>
-                      <ul className="aboutList">
-                        <li><span className="dot2" /> Software Testing principles (manual + automated testing)</li>
-                        <li><span className="dot2" /> Agile & Scrum methodology, sprint planning, and ceremonies</li>
-                        <li><span className="dot2" /> Test management & tracking using Jira and QTest</li>
-                        <li><span className="dot2" /> Data visualization & reporting using Tableau</li>
-                        <li><span className="dot2" /> Exposure to business & accounting platforms (Xero)</li>
-                      </ul>
-                    </div>
-                    <p className="aboutNote">
-                      I value writing software that is not only functional, but testable, maintainable,
-                      and aligned with real-world development workflows.
-                    </p>
-                    </div>
-                </div>
-                </section>
-            <section id="experience" className="panel">
-                  <h2>Professional Experience</h2>
+              {/* Core Engineering */}
+              <div className="aboutCard">
+                <h3>Core Engineering</h3>
 
-                  <div className="expGrid">
+                <ul className="aboutList">
+                  <li><span className="dot2" /> Full-stack web development using React, Node.js, Express, and REST APIs</li>
 
-                    <div className="expCard">
-                      <div className="expTop">
-                        <div>
-                          <div className="expRole">Software Engineer</div>
-                          <div className="expCompany">The New York Stem Cell Foundation</div>
-                        </div>
+                  <li><span className="dot2" /> Backend systems, database design, and API integration workflows</li>
 
-                        <div className="expDate">2025</div>
+                  <li><span className="dot2" /> Interactive UI/UX development with Three.js and responsive frontend design</li>
+
+                  <li><span className="dot2" /> Real-time systems and embedded software development on Raspberry Pi</li>
+                </ul>
+              </div>
+
+              {/* AI + Systems */}
+              <div className="aboutCard">
+                <h3>AI & Systems</h3>
+
+                <ul className="aboutList">
+                  <li><span className="dot2" /> AI-assisted image authenticity and perceptual similarity analysis</li>
+
+                  <li><span className="dot2" /> Applied machine learning concepts and intelligent system prototyping</li>
+
+                  <li><span className="dot2" /> PID-based environmental control systems and hardware interaction</li>
+
+                  <li><span className="dot2" /> Exposure to cloud computing, scalable architectures, and deployment workflows</li>
+                </ul>
+              </div>
+
+              {/* Software Process */}
+              <div className="aboutCard">
+                <h3>Software Process & Testing</h3>
+
+                <ul className="aboutList">
+                  <li><span className="dot2" /> Agile development, sprint planning, and collaborative engineering workflows</li>
+
+                  <li><span className="dot2" /> Software testing concepts including Selenium, PyTest, and QA automation</li>
+
+                  <li><span className="dot2" /> Experience using Jira, QTest, Postman, and developer productivity tools</li>
+
+                  <li><span className="dot2" /> Focus on maintainable, testable, and production-oriented software design</li>
+                </ul>
+              </div>
+
+              {/* Coursework */}
+              <div className="aboutCard">
+                <h3>Academic Foundation</h3>
+
+                <ul className="aboutList">
+                  <li><span className="dot2" /> Master’s in Computer Science — Pace University, New York</li>
+
+                  <li><span className="dot2" /> Coursework in DBMS, Software Testing, Internet Computing, Cloud Computing, AI, SDLC, and Statistics</li>
+
+                  <li><span className="dot2" /> Strong foundation in Data Structures & Algorithms and Object-Oriented Programming</li>
+
+                  <li><span className="dot2" /> Experience with AWS, R Studio, Tableau, and data visualization workflows</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+
+        <section id="experience" className="panel">
+          <h2>Professional Experience</h2>
+
+              <div className="expGrid">
+
+                {/* NYSCF */}
+                <div className="expCard">
+                  <div className="expTop">
+                    <div>
+                      <div className="expRole">Software Engineer</div>
+                      <div className="expCompany">
+                        The New York Stem Cell Foundation — New York, NY
                       </div>
-
-                      <div className="expBody">
-                        Worked with the R&D team to prototype a smart incubator system for preserving
-                        human cells under controlled environmental conditions.
-                      </div>
-
-                      <ul className="expList">
-                        <li>Developed PID-based gas regulation system for O₂, CO₂, N₂, and pressure control</li>
-                        <li>Built React touchscreen GUI on Raspberry Pi for monitoring & configuration</li>
-                        <li>Integrated embedded control logic with real-time environmental workflows</li>
-                      </ul>
                     </div>
 
-                    <div className="expCard">
-                      <div className="expTop">
-                        <div>
-                          <div className="expRole">Full Stack Developer Intern</div>
-                          <div className="expCompany">Dream Team Technologies</div>
-                        </div>
-
-                        <div className="expDate">2022 — 2023</div>
-                      </div>
-
-                      <div className="expBody">
-                        Collaborated with developers and designers to build a university management platform.
-                      </div>
-
-                      <ul className="expList">
-                        <li>Developed responsive interfaces using React, Angular & Vue.js</li>
-                        <li>Implemented OAuth authentication and secure payment handling</li>
-                        <li>Automated testing using Selenium + PyTest reducing manual QA effort by 75%</li>
-                      </ul>
-                    </div>
-
-                    <div className="expCard">
-                      <div className="expTop">
-                        <div>
-                          <div className="expRole">Hardware Engineering Intern</div>
-                          <div className="expCompany">Defense Research & Development Organization (DRDO)</div>
-                        </div>
-
-                        <div className="expDate">2021 — 2022</div>
-                      </div>
-
-                      <div className="expBody">
-                        Validated VHDL-designed circuits and simulation workflows for digital hardware systems.
-                      </div>
-
-                      <ul className="expList">
-                        <li>Worked with ModelSim for architecture & configuration verification</li>
-                        <li>Performed validation/testing for digital hardware logic workflows</li>
-                        <li>Contributed to improving verification reliability across project teams</li>
-                      </ul>
-                    </div>
-
+                    <div className="expDate">Jun 2025 — Aug 2025</div>
                   </div>
+
+                  <div className="expBody">
+                    Worked alongside the R&D team to research and prototype a smart incubator
+                    system designed to preserve human cells and blood samples under highly
+                    controlled environmental conditions. Contributed across embedded systems,
+                    control logic, and user interface development for monitoring and gas regulation.
+                  </div>
+
+                  <ul className="expList">
+                    <li>
+                      Developed a PID-based control system in C to regulate O₂, CO₂, N₂,
+                      and internal incubator pressure in real time.
+                    </li>
+
+                    <li>
+                      Built a React-based touchscreen dashboard on Raspberry Pi for
+                      real-time monitoring, alarm configuration, and environmental parameter control.
+                    </li>
+
+                    <li>
+                      Collaborated with researchers and engineers to improve usability,
+                      stability, and responsiveness of the incubator workflow.
+                    </li>
+
+                    <li>
+                      Worked with hardware communication, embedded workflows, and UI optimization
+                      for constrained touchscreen environments.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Dream Team */}
+                <div className="expCard">
+                  <div className="expTop">
+                    <div>
+                      <div className="expRole">Full Stack Developer </div>
+                      <div className="expCompany">
+                        Dream Team Technologies Pvt. Ltd. — Rajasthan, India
+                      </div>
+                    </div>
+
+                    <div className="expDate">Jun 2022 — Mar 2023</div>
+                  </div>
+
+                  <div className="expBody">
+                    Worked with developers and UX/UI designers to build and improve a
+                    university management platform focused on student operations such as
+                    attendance tracking, assignments, enrollment, and secure payment handling.
+                  </div>
+
+                  <ul className="expList">
+                    <li>
+                      Developed responsive frontend interfaces using React, Angular,
+                      Vue.js, HTML, CSS, and JavaScript.
+                    </li>
+
+                    <li>
+                      Implemented OAuth-based authentication and integrated secure
+                      payment workflows for protected user access.
+                    </li>
+
+                    <li>
+                      Automated UI testing using Selenium and PyTest, reducing manual
+                      testing effort and improving deployment efficiency.
+                    </li>
+
+                    <li>
+                      Participated in Agile development workflows including sprint planning,
+                      debugging, testing cycles, and collaborative feature reviews.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* DRDO */}
+                <div className="expCard">
+                  <div className="expTop">
+                    <div>
+                      <div className="expRole">Hardware Engineer</div>
+                      <div className="expCompany">
+                        Defense Research & Development Organization (DRDO) — India
+                      </div>
+                    </div>
+
+                    <div className="expDate">Jun 2021 — Mar 2022</div>
+                  </div>
+
+                  <div className="expBody">
+                    Assisted in validation and verification workflows for digital hardware
+                    systems designed using VHDL, with focus on simulation accuracy,
+                    architecture validation, and testing reliability.
+                  </div>
+
+                  <ul className="expList">
+                    <li>
+                      Worked with ModelSim to validate VHDL-designed circuits and
+                      simulate digital hardware behavior.
+                    </li>
+
+                    <li>
+                      Performed syntax, architecture, and configuration verification
+                      for hardware logic workflows.
+                    </li>
+
+                    <li>
+                      Contributed to improving verification reliability and testing
+                      consistency across engineering teams.
+                    </li>
+
+                    <li>
+                      Gained exposure to hardware simulation, debugging methodologies,
+                      and embedded engineering concepts.
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
             </section>
 
             <section id="skills" className="panel">
@@ -305,7 +381,210 @@ const Overlay = React.forwardRef(function Overlay(
 
                   </div>
              </section>
+        <section id="community" className="panel">
+          <h2>Leadership & Community Impact</h2>
 
+          <div className="communityGrid">
+
+            <div className="communityCard featuredCommunity">
+              <div className="communityTop">
+                <div>
+                  <div className="communityRole">
+                    Founder & Volunteer Lead
+                  </div>
+
+                  <div className="communityOrg">
+                    Paws and Wings Society
+                  </div>
+                </div>
+
+                <div className="communityDate">
+                  2019 — Present
+                </div>
+              </div>
+
+              <div className="communityBody">
+                Founded and actively lead “Paws and Wings Society,” an independent
+                animal welfare initiative focused on rescuing, treating, rehabilitating,
+                and supporting stray animals and injured birds through community-driven efforts.
+              </div>
+
+              <ul className="communityList">
+                <li>
+                  Organized rescue operations and emergency support for injured stray
+                  animals and birds across local communities.
+                </li>
+
+                <li>
+                  Coordinated vaccination drives, food distribution campaigns, and
+                  awareness initiatives promoting animal welfare and responsible care.
+                </li>
+
+                <li>
+                  Helped facilitate shelter support, adoption efforts, and rehabilitation
+                  assistance for rescued animals.
+                </li>
+
+                <li>
+                  Managed volunteers, community outreach, fundraising coordination,
+                  and operational planning for welfare activities since 2019.
+                </li>
+              </ul>
+
+              <div className="communityTags">
+                <span className="pill">Leadership</span>
+                <span className="pill">Community Impact</span>
+                <span className="pill">Volunteer Work</span>
+                <span className="pill">Animal Welfare</span>
+              </div>
+            </div>
+
+          </div>
+          <div className="communityCard">
+            <div className="communityTop">
+              <div>
+                <div className="communityRole">
+                  Member — AIESEC
+                </div>
+
+                <div className="communityOrg">
+                  OGTA (Outgoing Global Talent) & IGTe (Incoming Global Teacher)
+                </div>
+              </div>
+
+              <div className="communityDate">
+                2018 — 2020
+              </div>
+            </div>
+
+            <div className="communityBody">
+              Contributed to international exchange and leadership development initiatives
+              through AIESEC, collaborating with teams focused on global talent programs,
+              cultural exchange, and international engagement opportunities.
+            </div>
+
+            <ul className="communityList">
+              <li>
+                Worked with the Outgoing Global Talent (OGTA) team to help students
+                explore international internship and professional exchange opportunities.
+              </li>
+
+              <li>
+                Assisted the Incoming Global Teacher (IGTe) team in coordinating
+                communication, onboarding, and support for international participants.
+              </li>
+
+              <li>
+                Participated in collaborative team activities, outreach efforts,
+                leadership development workshops, and organizational events.
+              </li>
+            </ul>
+
+            <div className="communityTags">
+              <span className="pill">Leadership</span>
+              <span className="pill">International Collaboration</span>
+              <span className="pill">Teamwork</span>
+              <span className="pill">Communication</span>
+            </div>
+          </div>
+        <div className="communityCard">
+            <div className="communityTop">
+              <div>
+                <div className="communityRole">
+                  Volunteer
+                </div>
+
+                <div className="communityOrg">
+                  Global Shapers Community — Jodhpur Hub
+                </div>
+              </div>
+
+              <div className="communityDate">
+                2021 — 2022
+              </div>
+            </div>
+
+            <div className="communityBody">
+              Participated in community-driven initiatives and volunteer activities
+              focused on youth engagement, social impact, awareness programs,
+              and collaborative local development efforts.
+            </div>
+
+            <ul className="communityList">
+              <li>
+                Supported local volunteering and outreach activities through
+                collaborative community initiatives.
+              </li>
+
+              <li>
+                Contributed to awareness campaigns and youth-focused engagement programs.
+              </li>
+
+              <li>
+                Worked alongside volunteers and organizers to support community impact efforts.
+              </li>
+            </ul>
+
+            <div className="communityTags">
+              <span className="pill">Community Engagement</span>
+              <span className="pill">Volunteer Work</span>
+              <span className="pill">Youth Leadership</span>
+            </div>
+          </div>
+        <div className="communityCard">
+  <div className="communityTop">
+    <div>
+      <div className="communityRole">
+        General Secretary — Student Union
+      </div>
+
+      <div className="communityOrg">
+        MBM University, Rajasthan, India
+      </div>
+    </div>
+
+    <div className="communityDate">
+      2022 — 2023
+    </div>
+  </div>
+
+            <div className="communityBody">
+              Served as the elected General Secretary of the university’s independent
+              student union body, representing student interests and coordinating
+              welfare-focused initiatives, university activities, and large-scale student engagement programs.
+            </div>
+
+            <ul className="communityList">
+              <li>
+                Led coordination efforts between students, university administration,
+                and organizational teams to support student welfare and campus activities.
+              </li>
+
+              <li>
+                Organized and managed induction programs, student support operations,
+                and multi-team coordination workflows for new admissions and onboarding.
+              </li>
+
+              <li>
+                Worked with multiple student committees to oversee logistics,
+                communication, event planning, and operational execution.
+              </li>
+
+              <li>
+                Helped streamline student assistance and counseling activities
+                during university admissions and orientation programs.
+              </li>
+            </ul>
+
+            <div className="communityTags">
+              <span className="pill">Leadership</span>
+              <span className="pill">Operations</span>
+              <span className="pill">Student Welfare</span>
+              <span className="pill">Team Coordination</span>
+            </div>
+          </div>
+
+        </section>
 
         <section id="projects" className="panel">
   <div className="projectsTop">

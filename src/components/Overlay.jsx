@@ -8,75 +8,91 @@ const Overlay = React.forwardRef(function Overlay(
   return (
     <div className="overlay" ref={ref}>
       <header className="nav">
-  <div className="logo">Ayush // Spacefolio</div>
+  <div className="logo">Ayush Gehlot<span className="logoSub">Software Engineer · Spacefolio</span></div>
 
   <div className="navRight">
-    <div className="sectionPill">
-      {section?.toUpperCase()}
-    </div>
-
-    <button className="qualityBtn" onClick={onToggleQuality}>
-      {quality === "high" ? "High" : "Low"} Graphics
-    </button>
-
-    <div className="links">
-      <a
-        href="#about"
-        onClick={(e) => {
-          e.preventDefault();
-          onNav?.("about");
-        }}
-      >
-        About
-      </a>
-
-      <a
-        href="#projects"
-        onClick={(e) => {
-          e.preventDefault();
-          onNav?.("projects");
-        }}
-      >
-        Projects
-      </a>
-
-      <a
-        href="#contact"
-        className="cta"
-        onClick={(e) => {
-          e.preventDefault();
-          onNav?.("contact");
-        }}
-      >
-        Contact
-      </a>
-    </div>
+    <nav className="links" aria-label="Portfolio sections">
+      {[
+        ["About", "about"],
+        ["Experience", "experience"],
+        ["Skills", "skills"],
+        ["Projects", "projects"],
+        ["Community", "community"],
+        ["Contact", "contact"],
+      ].map(([label, id]) => (
+        <a key={id} href={`#${id}`} className={id === "contact" ? "cta" : undefined}
+          onClick={(e) => { e.preventDefault(); onNav?.(id); }}>
+          {label}
+        </a>
+      ))}
+    </nav>
   </div>
 </header>
 
 
       <main className="content">
         <section className="hero" id="top">
-          <motion.h1
-            initial={{ opacity: 0, y: 16 }}
+          <motion.div
+            className="heroContent"
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Building software that feels <span className="glow">out of this world</span>.
-          </motion.h1>
+            <div className="heroEyebrow">
+              <span className="heroStatusDot" aria-hidden="true" />
+              SOFTWARE ENGINEER · AI · CLOUD · EMBEDDED SYSTEMS
+            </div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-          >
-            Full-stack engineer (React, Node, AWS) + 3D experiences (Three.js).
-          </motion.p>
+            <h1 className="heroTitle">
+              Hi, I'm <span className="heroName">Ayush Gehlot.</span>
+              <span className="heroTitleLine">I build software</span>
+              <span className="heroTitleLine heroGradient">beyond the ordinary.</span>
+            </h1>
 
-          <div className="heroBtns">
-            <a className="btn primary" href="#projects">Explore Projects</a>
-            <a className="btn" href="#contact">Let’s Talk</a>
-          </div>
+            <motion.p
+              className="heroDescription"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.7 }}
+            >
+              Software Engineer with an M.S. in Computer Science from Pace
+              University, New York. I design and build full-stack applications,
+              AI-powered systems, cloud solutions, and embedded software that
+              solve real-world problems.
+            </motion.p>
+
+            <motion.div
+              className="heroBtns heroActions"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35, duration: 0.7 }}
+            >
+              <a className="btn primary" href="#projects"
+                onClick={(e) => { e.preventDefault(); onNav?.("projects"); }}>
+                Explore My Work <span aria-hidden="true">↗</span>
+              </a>
+              <a className="btn" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                View Resume
+              </a>
+              <a className="btn heroContactBtn" href="#contact"
+                onClick={(e) => { e.preventDefault(); onNav?.("contact"); }}>
+                Contact Me
+              </a>
+            </motion.div>
+
+            <motion.div
+              className="heroSocials"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+            >
+              <a href="https://www.linkedin.com/in/ayush-gehlot/"
+                target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <span className="heroSocialDivider" aria-hidden="true" />
+              <a href="https://github.com/ayush-05-ggl"
+                target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </motion.div>
+          </motion.div>
         </section>
           <section id="about" className="panel">
             <h2>About Me</h2>
@@ -221,7 +237,7 @@ const Overlay = React.forwardRef(function Overlay(
                       </div>
                     </div>
 
-                    <div className="expDate">Jun 2022 — Mar 2023</div>
+                    <div className="expDate">Jun 2022 — Jun 2023</div>
                   </div>
 
                   <div className="expBody">
@@ -700,9 +716,14 @@ const Overlay = React.forwardRef(function Overlay(
           <h2>Contact</h2>
 
   <div className="contactRow">
-    <a className="btn primary" href="/resume.pdf?v=11" target="_blank" rel="noreferrer">
-      Download Resume
-    </a>
+    <a
+  className="btn"
+  href="/Ayush.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View Resume
+</a>
     <a className="btn" href="mailto:ayushgehlot100@gmail.com">
       Email Me
     </a>
